@@ -10,7 +10,7 @@ public interface AddressService {
     Address saveAddress(Address address);
 
     //READ
-    List<Address> getAddress(Long id);
+    List<Address> getAddress();
 
     //READ ONE BY ID
     Address getAddressById(Long id);

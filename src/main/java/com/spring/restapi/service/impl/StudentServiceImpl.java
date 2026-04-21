@@ -3,9 +3,11 @@ package com.spring.restapi.service.impl;
 import com.spring.restapi.entity.Student;
 import com.spring.restapi.repository.StudentRepository;
 import com.spring.restapi.service.StudentService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class StudentServiceImpl implements StudentService {
 
     private final StudentRepository studentRepository;

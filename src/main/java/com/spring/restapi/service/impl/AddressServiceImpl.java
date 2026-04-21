@@ -3,9 +3,11 @@ package com.spring.restapi.service.impl;
 import com.spring.restapi.entity.Address;
 import com.spring.restapi.repository.AddressRepository;
 import com.spring.restapi.service.AddressService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class AddressServiceImpl implements AddressService {
 
     private final AddressRepository addressRepository;
@@ -20,7 +22,7 @@ public class AddressServiceImpl implements AddressService {
     }
 
     @Override
-    public List<Address> getAddress(Long id) {
+    public List<Address> getAddress() {
         return addressRepository.findAll();
     }
 

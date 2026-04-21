@@ -1,5 +1,6 @@
 package com.spring.restapi.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -18,6 +19,7 @@ public class Address {
     private String city;
 
     @OneToOne( mappedBy = "address")
+    @JsonBackReference
     private Student student;
 
 
